@@ -1,0 +1,9 @@
+<img
+  [src]="housingLocation.photo"
+  alt="Exterior photo of {{ housingLocation.name }}"
+/>
+<section>
+  <h1>{{ housingLocation.name }}</h1>
+  <p>{{ housingLocation.city }}</p>
+  <a routerLink="/details/{{ housingLocation.id }}" param>View details</a>
+</section>

@@ -1,0 +1,27 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  background-color: rgb(34, 34, 34);
+  border-radius: 20px;
+  overflow: hidden;
+  flex-grow: 1;
+
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
+  }
+  section {
+    padding: 20px;
+    flex-grow: 1;
+    min-height: 100px;
+    h1 {
+      font-size: 1.5rem;
+      color: white;
+      padding-bottom: 2 px;
+    }
+  }
+}

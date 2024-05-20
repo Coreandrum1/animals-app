@@ -1,0 +1,10 @@
+<form>
+  <input type="text" [attr.placeholder]="'Search in ' + title" #filter />
+  <button type="button" (click)="filterResults(filter.value)">Search</button>
+</form>
+
+<section>
+  @for (item of filteredLocationList; track item.id ) {
+  <app-housing-location [housingLocation]="item"></app-housing-location>
+  }
+</section>
